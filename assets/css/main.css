@@ -2363,11 +2363,13 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			margin: auto;
 		}
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 3em 0 0;
+				text-align: center;
 			}
 
 				ul.icons li:last-child {
@@ -3059,6 +3061,9 @@
 		}
 
 /* Footer */
+	#footer {
+		margin-bottom: 2em;
+	}
 
 	#footer .inner {
 		border-top: 1px solid #dbdbdb;
@@ -3083,7 +3088,7 @@
 			}
 
 	#footer ul.icons li .icon {
-		font-size: 0.58em;
+		font-size: 2em;
 	}
 
 	@media screen and (max-width: 736px) {
