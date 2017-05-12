@@ -1691,7 +1691,7 @@
 
 	h3 {
 		font-size: 1.35em;
-		text-decoration: underline;
+		/*text-decoration: underline;*/
 	}
 
 	#one h3 {
@@ -2965,16 +2965,25 @@
 /* Banner */
 
 	#banner {
-		padding: 16em 0 10em 0;
-		background-image: url(http://artshi.ru/uploads/posts/2012-11/1353833825_delaunay-005.jpg);
-		background-color: red;
+		/*padding: 16em 0 10em 0;*/
+		/*Sbackground-image: url(http://artshi.ru/uploads/posts/2012-11/1353833825_delaunay-005.jpg);*/
+		background-color: black;
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
 		height: 80vh;
+		position: relative;
+		 width:100%;
+      	overflow: hidden;
 	}
+
+		#banner video{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
 
 		#banner h1 {
 			font-size: 9.5em;
@@ -2983,6 +2992,14 @@
 			line-height: 1em;
 			margin: 0 0 0.2em 0;
 			padding: 0;
+		}
+		#banner .text{
+			position: absolute;
+			z-index: 2;
+			top:50%;
+			left: 50%;
+			width: 100%;
+			transform:translate(-50%, -50%);
 		}
 
 		#banner p {
@@ -3004,7 +3021,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 10em 2em 8em 2em;
+				/*padding: 10em 2em 8em 2em;*/
 			}
 
 		}
@@ -3020,7 +3037,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 8em 1.5em 6em 1.5em;
+				/*padding: 8em 1.5em 6em 1.5em;*/
 			}
 
 				#banner h1 {
@@ -3036,7 +3053,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 6em 1.5em 4em 1.5em;
+				/*padding: 6em 1.5em 4em 1.5em;*/
 			}
 
 		}
@@ -3107,10 +3124,29 @@
 
 		.video__wrapper {
 			width:100%;
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			height: 0;
+		}
+
+		.videoWrapper object,
+		.videoWrapper embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
 
 		iframe {
 			display: flex;
-			position:relative;
-			margin:0 auto;
+			position: ABSOLUTE;
+			margin: 0 auto;
+			height: 100%;
+			width: 100%;	
 		}
+
+
+.pers {
+	color: #fff;
+}
